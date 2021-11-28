@@ -1,15 +1,25 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-    display: flex;
-    flex-wrap: wrap;
 
-    width: 100%;
-    height: 100%;
+    
 
 `;
 
-export const CardList = styled.div``;
+export const CardList = styled.div`
 
 
-export const Card = styled.div``;
+
+`;
+
+
+export const Card = styled.div`
+    background: #f1f1f1;
+    height: 450px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0. 0.3);
+
+`;

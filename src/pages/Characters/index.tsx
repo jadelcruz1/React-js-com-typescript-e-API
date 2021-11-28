@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import api from '../../services/api';
-import { Container, CardList, Card } from '../../Characters/styles';
+import { Container, CardList, Card } from './styles';
 
 
 interface ResponseData {
@@ -18,9 +18,9 @@ const Characters: React.FC = () => {
 
     useEffect(()=> {
       api
-      .get('./characters')
+      .get('/characters')
       .then(response => {
-        setCharacters(response.data.results);
+        setCharacters(response.data);
         console.log('segundo log', characters);
       })
       .catch(err => console.log(err));
@@ -28,22 +28,20 @@ const Characters: React.FC = () => {
 
     return (
       <Container>
-        <CardList>
-
+        <CardList>                
           {characters.map(character => {
             return (
-              <Card key={character.id}>
-                <div id="img" />
-                <h2> {character.name}</h2>
-                <p>{character.description}</p>
+              <Card key={character. id}>
+                
+                <h2>{character. name} </h2>
+                <p> {character.gender} </p>
               </Card>
 
-            )
-          }
-            
-            )}
+            );
+          })};
+        
 
-        </CardList>
+      </CardList>
 
         
         
