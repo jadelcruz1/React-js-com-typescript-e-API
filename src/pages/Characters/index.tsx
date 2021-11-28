@@ -8,6 +8,7 @@ interface ResponseData {
   name: string;
   id: string;
   description: string;
+  img: string;
   
 
 }
@@ -21,7 +22,7 @@ const Characters: React.FC = () => {
       .get('/characters')
       .then(response => {
         setCharacters(response.data);
-        console.log('segundo log', characters);
+        console.log(response.data);
       })
       .catch(err => console.log(err));
     },[]);
@@ -32,7 +33,7 @@ const Characters: React.FC = () => {
           {characters.map(character => {
             return (
               <Card key={character. id}>
-                
+                <div id="img" />
                 <h2>{character. name} </h2>
                 <p> {character.gender} </p>
               </Card>
