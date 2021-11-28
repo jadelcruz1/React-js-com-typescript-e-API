@@ -1,15 +1,17 @@
-import { url } from 'inspector';
 import styled from 'styled-components';
 
 export const Container = styled.main`
-
     
 
 `;
 
-export const CardList = styled.div``;
+export const CardList = styled.div`
 
-const urlImg = (props: img) => `${props.img.path}`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+`;
 
 
 export const Card = styled.div`
@@ -17,17 +19,10 @@ export const Card = styled.div`
     height: 450px;
     width: 300px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0. 0.3);
+    box-shadow: 2px 2px 10px 1Opx rgba(0, 0, 0. 0.3);
 
+`;
 
-
-
-div#img{
-    heigth: 400px;
-    width: 100%;
-    background: url(${urlImg}) no-repeat center;
-    background-size: cover;
-}
-;
+export const ButtonMore = styled.div``;
