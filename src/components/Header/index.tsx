@@ -1,11 +1,10 @@
 
-import styles from './Header.module.css'
 
 export default function Header(){
 
     return ( 
      <>
-        <div className="xx">  
+        <div> 
             <nav className="navbar navbar-light bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand">Jupyter serviços</a>

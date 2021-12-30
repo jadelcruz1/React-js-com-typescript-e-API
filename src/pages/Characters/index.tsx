@@ -30,17 +30,22 @@ const Characters: React.FC = () => {
     },[]);
 
     return (
-
-      
+     <> 
       <Container>
         <CardList>                
           {characters.map(character => {
             return (
-              <Card key={character. id}>
-                <img src={character.img} alt={character.name} />
-                <h2>{character. name} </h2>
-                <p> {character.gender} </p>
+              <><Card key={character.id}>
+                               
+                  <h2>{character.name} </h2>
+                  <p> {character.gender} </p>
+
+                  <img src={character.img} alt={character.name} />
+              
+
               </Card>
+              
+              </>
 
             );
           })};
@@ -51,6 +56,8 @@ const Characters: React.FC = () => {
         
      
       </Container>
+
+    </>
     );
     ;
 
