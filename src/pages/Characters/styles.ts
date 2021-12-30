@@ -19,10 +19,9 @@ export const Card = styled.div`
     height: 450px;
     width: 300px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 2px 2px 10px 1Opx rgba(0, 0, 0. 0.3);
 
 `;
 
-export const ButtonMore = styled.div``;

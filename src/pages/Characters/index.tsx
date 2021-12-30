@@ -1,6 +1,8 @@
 import React, { useEffect, useState} from 'react';
 import api from '../../services/api';
-import { Container, CardList, Card, ButtonMore } from './styles';
+import { Container, CardList, Card } from './styles';
+
+
 
 
 interface ResponseData {
@@ -8,7 +10,7 @@ interface ResponseData {
   name: string;
   id: string;
   description: string;
-  img: URL;
+  img: string;
   
 
 }
@@ -33,7 +35,7 @@ const Characters: React.FC = () => {
           {characters.map(character => {
             return (
               <Card key={character. id}>
-                <p> {character.img} </p>
+                <img src={character.img} alt={character.name} />
                 <h2>{character. name} </h2>
                 <p> {character.gender} </p>
               </Card>
@@ -44,7 +46,6 @@ const Characters: React.FC = () => {
 
       </CardList>
 
-      <ButtonMore>  </ButtonMore>
         
      
       </Container>

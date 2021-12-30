@@ -7,14 +7,16 @@ import Characters from './pages/Characters';
 
 
 
+
 const App:React.FC = () => {
 
  return(
- <>              
+ <>    
+      
       <Characters />
       <GlobalStyle /> 
 
-      </>
+</>
 );     
   
 };
