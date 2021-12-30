@@ -30,6 +30,8 @@ const Characters: React.FC = () => {
     },[]);
 
     return (
+
+      
       <Container>
         <CardList>                
           {characters.map(character => {

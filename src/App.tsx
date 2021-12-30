@@ -3,6 +3,9 @@ import GlobalStyle from './styles/global';
 
 import Characters from './pages/Characters';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+
 
 
 
@@ -11,15 +14,15 @@ import Characters from './pages/Characters';
 const App:React.FC = () => {
 
  return(
- <>    
-      
-      <Characters />
-      <GlobalStyle /> 
+      <>    
+            <Header />
+            <Characters />
+            <GlobalStyle /> 
 
-</>
-);     
-  
-};
+      </>
+  );     
+      
+ };
 
 
 export default App;
